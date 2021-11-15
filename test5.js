@@ -20,11 +20,11 @@ function checkIntersect(word_1, word_2) {
 
   tmp = [word_1, word_2];
   tmp = tmp.sort((a, b) => a.length - b.length);
-  sameChare = "";
+  sameChar = "";
   [...tmp[0]].forEach((v, idx) => {
-    if (v === tmp[1][idx]) sameChare = sameChare + v;
+    if (v === tmp[1][idx]) sameChar = sameChar + v;
   });
-  return sameChare;
+  return sameChar;
 }
 
 console.log(result(words));
